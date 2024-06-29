@@ -1,6 +1,6 @@
 # Audit and Compliance Project Overview
 
-The **Audit and Compliance** project leverages generative AI to transform audit and compliance processes within financial institutions. By automating traditionally manual tasks, the project aims to enhance accuracy, efficiency, and adaptability in managing regulatory standards and financial transactions. Through seamless integration of technologies like Microsoft Azure and OpenAI, the project ensures robust compliance frameworks that can adapt to evolving regulations, thereby optimizing organizational compliance efforts while minimizing operational overhead.
+The **Audit and Compliance** project leverages generative AI to transform audit and compliance processes within financial institutions. By automating traditionally manual tasks, the project aims to enhance accuracy, efficiency, and adaptability in managing regulatory standards and financial transactions. Through seamless integration of technologies like **Microsoft Azure** and **OpenAI**, the project ensures robust compliance frameworks that can adapt to evolving regulations, thereby optimizing organizational compliance efforts while minimizing operational overhead.
 
 ## A. Data Integration and Preprocessing
 
@@ -19,7 +19,7 @@ This module aggregates financial transaction data from various sources into a ce
    - Converts fetched data, usually in JSON format, into a Pandas DataFrame for easier manipulation and analysis.
 
 3. **Data Storage**:
-   - Uploads the processed DataFrame to Azure Blob Storage, a scalable object storage service provided by Microsoft Azure. This ensures secure storage and accessibility for downstream processing.
+   - Uploads the processed DataFrame to **Azure Blob Storage**, a scalable object storage service provided by Microsoft Azure. This ensures secure storage and accessibility for downstream processing.
 
 ### Mock Placeholders
 
@@ -41,7 +41,7 @@ This module identifies anomalies in financial transactions using AI-driven algor
    - Loads transaction data stored in Azure Blob Storage into a Pandas DataFrame for analysis.
 
 2. **Anomaly Detection**:
-   - Utilizes OpenAI's GPT to analyze transaction data and identify anomalies. The model prompts with transaction data and returns any detected anomalies.
+   - Utilizes **OpenAI's GPT** to analyze transaction data and identify anomalies. The model prompts with transaction data and returns any detected anomalies.
 
 ### Mock Placeholders
 
@@ -62,10 +62,10 @@ This module generates comprehensive audit reports based on analyzed transaction 
    - Loads transaction data from centralized storage.
 
 2. **Report Generation**:
-   - Utilizes OpenAI's GPT to generate detailed audit reports, including analysis of transaction data and detected anomalies.
+   - Utilizes **OpenAI's GPT** to generate detailed audit reports, including analysis of transaction data and detected anomalies.
 
 3. **Report Storage**:
-   - Uploads generated reports to SharePoint for easy access and collaboration.
+   - Uploads generated reports to **SharePoint** for easy access and collaboration.
 
 ### Mock Placeholders
 
@@ -87,7 +87,7 @@ This module continuously monitors regulatory updates and notifies stakeholders a
    - Periodically fetches updates from a regulatory updates API.
 
 2. **Analysis and Notification**:
-   - Analyzes updates to identify relevant changes and sends notifications to Microsoft Teams for proactive compliance management.
+   - Analyzes updates to identify relevant changes and sends notifications to **Microsoft Teams** for proactive compliance management.
 
 ### Mock Placeholders
 
