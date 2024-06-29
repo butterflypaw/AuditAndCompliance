@@ -1,7 +1,7 @@
 # AuditAndCompliance
 The Audit and Compliance project leverages generative AI to revolutionize audit and compliance processes within financial institutions. By automating traditionally manual tasks, the project aims to enhance accuracy, efficiency, and adaptability in managing regulatory standards and financial transactions. Through seamless integration of technologies like Microsoft Azure and OpenAI, the project ensures robust compliance frameworks that can adapt to evolving regulations, thereby optimizing organizational compliance efforts while minimizing operational overhead. Key components include: 
 
-1. Data Integration and Preprocessing
+A. Data Integration and Preprocessing
 File: data_integration_preprocessing.py
 
 Overview
@@ -23,7 +23,7 @@ ERP_API_URL: Mock URL for the ERP system's transaction data API.
 ERP_API_KEY: Mock API key for authentication.
 AZURE_STORAGE_CONNECTION_STRING: Mock connection string for Azure Blob Storage.
 
-2. Anomaly Detection
+B. Anomaly Detection
 File: anomaly_detection.py
 
 Overview
@@ -39,7 +39,7 @@ Mock Placeholders
 AZURE_OPENAI_API_KEY: Mock API key for accessing OpenAI services.
 AZURE_OPENAI_ENDPOINT: Mock endpoint for OpenAI services.
 
-3. Report Generation
+C. Report Generation
 File: report_generation.py
 
 Overview
@@ -60,7 +60,7 @@ AZURE_OPENAI_API_KEY: Mock API key for accessing OpenAI services.
 SHAREPOINT_SITE_URL: Mock URL for the SharePoint site.
 SHAREPOINT_ACCESS_TOKEN: Mock access token for SharePoint.
 
-4. Regulatory Monitoring
+D. Regulatory Monitoring
 File: regulatory_monitoring.py
 
 Overview
