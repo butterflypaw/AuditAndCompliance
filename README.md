@@ -16,11 +16,6 @@ Traditional audit and compliance processes in financial institutions are plagued
 - **Power BI:** Optional for data visualization and reporting.
 - **SharePoint:** Optional for document management and collaboration.
 
-## Any Supporting Functional Documents
-- Detailed project documentation outlining system architecture, workflows, and API specifications.
-- Mock data examples (CSV files) for testing and demonstration.
-- User manuals or guides for setup, deployment, and maintenance.
-
 ## Key Differentiators & Adoption Plan
 ### Key Differentiators:
 - Integration of OpenAI's GPT for sophisticated anomaly detection and report generation.
