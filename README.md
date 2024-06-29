@@ -1,96 +1,95 @@
-# AuditAndCompliance
-## Project Overview
+# Audit and Compliance Project Overview
 
-The **Audit and Compliance** project leverages generative AI to revolutionize audit and compliance processes within financial institutions. By automating traditionally manual tasks, the project aims to enhance accuracy, efficiency, and adaptability in managing regulatory standards and financial transactions. Through seamless integration of technologies like Microsoft Azure and OpenAI, the project ensures robust compliance frameworks that can adapt to evolving regulations, thereby optimizing organizational compliance efforts while minimizing operational overhead. Key components include:
+The **Audit and Compliance** project leverages generative AI to transform audit and compliance processes within financial institutions. By automating traditionally manual tasks, the project aims to enhance accuracy, efficiency, and adaptability in managing regulatory standards and financial transactions. Through seamless integration of technologies like Microsoft Azure and OpenAI, the project ensures robust compliance frameworks that can adapt to evolving regulations, thereby optimizing organizational compliance efforts while minimizing operational overhead.
 
-### A. Data Integration and Preprocessing
+## A. Data Integration and Preprocessing
 
 **File**: `data_integration_preprocessing.py`
 
-#### Overview
+### Overview
 
-In this module, we aggregate financial transaction data from various sources into a centralized data repository. This is a crucial step for ensuring that all relevant data is available for subsequent analysis by AI models.
+This module aggregates financial transaction data from various sources into a centralized data repository. This step ensures that all relevant data is available for subsequent analysis by AI models.
 
-#### Steps
+### Steps
 
-i. **Fetching Data**:
-   - We use an API to fetch transaction data from an ERP (Enterprise Resource Planning) system. The API call is authenticated using a mock API key.
+1. **Fetching Data**:
+   - Utilizes an API to fetch transaction data from an ERP (Enterprise Resource Planning) system. The API call is authenticated using a mock API key.
 
-ii. **Data Conversion**:
-   - The fetched data, typically in JSON format, is converted into a Pandas DataFrame for easier manipulation and analysis.
+2. **Data Conversion**:
+   - Converts fetched data, usually in JSON format, into a Pandas DataFrame for easier manipulation and analysis.
 
-iii. **Data Storage**:
-   - The processed DataFrame is uploaded to Azure Blob Storage, a scalable object storage service provided by Microsoft Azure. This ensures that the data is securely stored and easily accessible for downstream processing.
+3. **Data Storage**:
+   - Uploads the processed DataFrame to Azure Blob Storage, a scalable object storage service provided by Microsoft Azure. This ensures secure storage and accessibility for downstream processing.
 
-#### Mock Placeholders
+### Mock Placeholders
 
 - `ERP_API_URL`: Mock URL for the ERP system's transaction data API.
 - `ERP_API_KEY`: Mock API key for authentication.
 - `AZURE_STORAGE_CONNECTION_STRING`: Mock connection string for Azure Blob Storage.
 
-### B. Anomaly Detection
+## B. Anomaly Detection
 
 **File**: `anomaly_detection.py`
 
-#### Overview
+### Overview
 
-This module detects anomalies in financial transactions using AI-driven algorithms. It helps in identifying potential non-compliance or fraudulent activities.
+This module identifies anomalies in financial transactions using AI-driven algorithms, aiding in detecting potential non-compliance or fraudulent activities.
 
-#### Steps
+### Steps
 
-i. **Data Loading**:
-   - Transaction data stored in Azure Blob Storage is loaded into a Pandas DataFrame for analysis.
+1. **Data Loading**:
+   - Loads transaction data stored in Azure Blob Storage into a Pandas DataFrame for analysis.
 
-ii. **Anomaly Detection**:
-   - OpenAI's GPT is used to analyze transaction data and identify anomalies. The model prompts with transaction data and returns any detected anomalies.
+2. **Anomaly Detection**:
+   - Utilizes OpenAI's GPT to analyze transaction data and identify anomalies. The model prompts with transaction data and returns any detected anomalies.
 
-#### Mock Placeholders
+### Mock Placeholders
 
 - `AZURE_OPENAI_API_KEY`: Mock API key for accessing OpenAI services.
 - `AZURE_OPENAI_ENDPOINT`: Mock endpoint for OpenAI services.
 
-### C. Report Generation
+## C. Report Generation
 
 **File**: `report_generation.py`
 
-#### Overview
+### Overview
 
-This module generates comprehensive audit reports based on analyzed transaction data. It provides detailed insights and documentation of the auditing process.
+This module generates comprehensive audit reports based on analyzed transaction data, providing detailed insights and documentation of the auditing process.
 
-#### Steps
+### Steps
 
-i. **Data Loading**:
-   - Load transaction data from centralized storage.
+1. **Data Loading**:
+   - Loads transaction data from centralized storage.
 
-ii. **Report Generation**:
-   - OpenAI's GPT is used to generate detailed audit reports, including analysis of transaction data and detected anomalies.
+2. **Report Generation**:
+   - Utilizes OpenAI's GPT to generate detailed audit reports, including analysis of transaction data and detected anomalies.
 
-iii. **Report Storage**:
-   - Generated reports are uploaded to SharePoint for easy access and collaboration.
+3. **Report Storage**:
+   - Uploads generated reports to SharePoint for easy access and collaboration.
 
-#### Mock Placeholders
+### Mock Placeholders
 
 - `AZURE_OPENAI_API_KEY`: Mock API key for accessing OpenAI services.
 - `SHAREPOINT_SITE_URL`: Mock URL for the SharePoint site.
 - `SHAREPOINT_ACCESS_TOKEN`: Mock access token for SharePoint.
 
-### D. Regulatory Monitoring
+## D. Regulatory Monitoring
 
 **File**: `regulatory_monitoring.py`
 
-#### Overview
+### Overview
 
 This module continuously monitors regulatory updates and notifies stakeholders about changes in compliance requirements.
 
-#### Steps
+### Steps
 
-i. **Fetching Regulatory Updates**:
-   - Periodically fetch updates from a regulatory updates API.
+1. **Fetching Regulatory Updates**:
+   - Periodically fetches updates from a regulatory updates API.
 
-ii. **Analysis and Notification**:
-   - Analyze updates to identify relevant changes and send notifications to Microsoft Teams for proactive compliance management.
+2. **Analysis and Notification**:
+   - Analyzes updates to identify relevant changes and sends notifications to Microsoft Teams for proactive compliance management.
 
-#### Mock Placeholders
+### Mock Placeholders
 
 - `REGULATORY_UPDATES_URL`: Mock URL for regulatory updates.
 - `TEAMS_WEBHOOK_URL`: Mock webhook URL for Microsoft Teams notifications.
